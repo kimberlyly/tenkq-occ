@@ -8,6 +8,9 @@ body {
   margin-bottom: 50px;
 }
 
+.item img {
+  width: 100%;
+}
 .icon-bar {
   color: #000;
   background-color: #000;
