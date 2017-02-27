@@ -69,6 +69,7 @@
         <div class="item active">
           <img src="http://placehold.it/1600x600" alt="...">
           <div class="carousel-caption">
+            <button class="carousel-button">First Time?</button>
           </div>
         </div>
         <div class="item">
@@ -94,19 +95,60 @@
       </a>
     </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="section-header">Welcome to the OCC!</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis felis eu arcu bibendum, in vehicula diam rhoncus. Aliquam erat volutpat. Phasellus sit amet sem vel orci semper dignissim id ac sapien. Nunc tempor mauris et tincidunt feugiat. Mauris pretium orci a mauris pellentesque rhoncus. Suspendisse potenti. In et ex eget sapien porta ullamcorper. Sed pulvinar id mi ut eleifend. Fusce at ipsum vitae lectus ullamcorper hendrerit vulputate a est. Vivamus lobortis sem at tincidunt tempus. In efficitur et metus at posuere. Sed consectetur dolor sit amet nunc mollis placerat. Pellentesque nunc dui, accumsan ut ante ac, bibendum ultrices sapien.
-          </p>
+    <section class="primary-section">
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="section-header">Welcome to the OCC!</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris lobortis felis eu arcu bibendum, in vehicula diam rhoncus. Aliquam erat volutpat. Phasellus sit amet sem vel orci semper dignissim id ac sapien. Nunc tempor mauris et tincidunt feugiat. Mauris pretium orci a mauris pellentesque rhoncus. Suspendisse potenti. In et ex eget sapien porta ullamcorper. Sed pulvinar id mi ut eleifend. Fusce at ipsum vitae lectus ullamcorper hendrerit vulputate a est. Vivamus lobortis sem at tincidunt tempus. In efficitur et metus at posuere. Sed consectetur dolor sit amet nunc mollis placerat. Pellentesque nunc dui, accumsan ut ante ac, bibendum ultrices sapien.
+            </p>
+          </div>
         </div>
-      </div>
+      </div> <!-- /container -->
+    </section>
+    <hr>
 
-      <hr>
-    </div> <!-- /container -->
+    <section class="primary-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="section-header">Instagram</h1>
+            <div id="instafeed">
+
+            </div>
+          </div>
+        </div>
+    </section>
+    <hr>
+
+    <section class="primary-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="section-header">Setting Schedule</h1>
+            <p>
+              Check here to see when we're going to reset our walls!
+            </p>
+          </div>
+        </div>
+    </section>
+    <hr>
+
+    <section class="primary-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="section-header">Hours and Location</h1>
+            <p>
+              merp
+            </p>
+          </div>
+        </div>
+    </section>
+    <hr>
+
     <footer class="footer">
       <div class="social-media">
         <a href="https://www.facebook.com/groups/68473930484/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
@@ -125,5 +167,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Font awesome -->
     <script src="https://use.fontawesome.com/91c786b0d4.js"></script>
+    <!-- Instafeed -->
+    <script type="text/javascript" src="path/to/instafeed.min.js"></script>
+
+    <script type="text/javascript">
+        var userFeed = new Instafeed({
+            get: 'user',
+            userId: '3687456587',
+            clientId: '4fa0c08c29924f02b70cbe1cfbfd6775'
+        });
+        userFeed.run();
+    </script>
   </body>
 </html>
