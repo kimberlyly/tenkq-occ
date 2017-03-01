@@ -73,3 +73,18 @@ body {
   height: 50px;
   margin-bottom: 20px;
 }
+
+.map-section > img {
+  display: block;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.centered-table {
+  margin: 0px auto;
+  border: 0px;
+}
+
+.centered-table td {
+  padding-left: 15px;
+}
