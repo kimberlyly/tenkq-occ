@@ -1,6 +1,6 @@
 function readStringFromFileAtPath(pathOfFileToReadFrom) {
   var request = new XMLHttpRequest();
-  request.open("GET", "https://kimberlyly.github.io/" + pathOfFileToReadFrom, false);
+  request.open("GET", "https://kimberlyly.github.io/tenkq-occ/" + pathOfFileToReadFrom, false);
   request.send(null);
   var returnValue = request.responseText;
 
