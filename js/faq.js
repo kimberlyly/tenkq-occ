@@ -1,3 +1,6 @@
+var lastQ = "";
+var lastA = "";
+
 $(document).ready(function() {
 	initializePage();
 });
@@ -8,33 +11,45 @@ function initializePage() {
 }
 
 function toggleQuestion(e) {
-	//hideAllAnswers();
-
+	// get the ID of question clicked
 	var questionID = this.id;
-	//console.log("clicked " + questionID.substring(2,4));
+	//console.log("clicked " + questionID);
+
+	// close the previous opened question
+	if( questionID != lastQ && lastQ != "") {
+		console.log("if");
+		var oldQuestion = $('#'+lastQ).text();
+		oldQuestion = oldQuestion.substring(2);
+		$('#'+lastQ).html("+ "+oldQuestion);
+		$('#'+lastA).slideUp();
+	}
+
+  // get the question string
 	var newQuestion = $('#'+questionID).text();
 	var symbol = newQuestion.substring(0,1);
-	//console.log(symbol);
 	newQuestion = newQuestion.substring(2);
-	//console.log(newQuestion);
 	
+  // get the ID of the corresponding question
 	var answerID = "a-"+questionID.substring(2,4);
-	//console.log(answerID);
 	var panel = document.getElementById(answerID);
 	
-	$('#'+answerID).slideToggle();
+	//$('#'+answerID).slideToggle();
 
 	if( symbol == "+") {
 		//$('#'+answerID).slideToggle();
+		$('#'+answerID).slideDown();
 		//$('#'+questionID).html("<a href='#"+questionID+"'>- "+newQuestion+"</a>");
 		$('#'+questionID).html("- "+newQuestion);
+		lastQ = questionID;
+		lastA = answerID;
 	}
 	else if( symbol == "-") {
 		//$('#'+answerID).slideToggle();
-		//$('#'+answerID).slideUp();
+		$('#'+answerID).slideUp();
 		//$('#'+questionID).html("<a href='#"+questionID+"'>+ "+newQuestion+"</a>");
 		$('#'+questionID).html("+ "+newQuestion);
 	}
+	
 	/*if (panel.style.display !== "block") {
 		$('#'+questionID).html("- "+newQuestion);
 		//$('#'+answerID).slideDown();
