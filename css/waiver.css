@@ -1,0 +1,302 @@
+/* WAIVER: label */
+label {
+    cursor: default;
+}
+
+/* WAIVER: waiver form container */
+.form_table {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #cccccc;
+    background: #FFFFFF;
+    color: #000000;
+    overflow: hidden;
+    border-radius: 6px;
+}
+@media (max-width: 649px), (device-height: 1024px) and (device-width: 768px) and (orientation: portrait), (device-height: 1024px) and (device-width: 768px) and (orientation: landscape)
+responsive7.css?1603:124
+.form_table, .outside_container {
+    box-sizing: border-box;
+    overflow: visible !important;
+    width: 100% !important;
+    padding: 1px;
+    border-radius: 0px !important;
+}
+@media (max-width: 480px), only screen and (max-device-width: 480px) and (min-device-width: 320px)
+responsive7.css?1603:5
+.form_table, .outside_container {
+    box-sizing: border-box;
+    overflow: visible !important;
+    width: 100% !important;
+    padding: 1px;
+    border-radius: 0px !important;
+}
+.form_table a {
+    color: #0000CC;
+}
+
+/* WAIVER: outside_container */
+.outside_container {
+    width: auto;
+}
+.outside_container {
+    width: 650px;
+    padding: 1em 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #333333;
+}
+
+/* WAIVER: clear (center?) */
+.clear {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+/* WAIVER: q */
+.q {
+    padding: 10px;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    float: left;
+    display: block;
+}
+@media (max-width: 480px), only screen and (max-device-width: 480px) and (min-device-width: 320px)
+responsive7.css?1603:17
+.q {
+    float: none !important;
+    margin-left: 0 !important;
+}
+.q .item_anchor {
+    position: relative;
+    top: -15px;
+}
+.q .question {
+    font-weight: bold;
+}
+@media (max-width: 480px), only screen and (max-device-width: 480px) and (min-device-width: 320px)
+responsive7.css?1603:35
+.q .top_question, .q .left_question, .q .left_question_first {
+    min-height: 0;
+    margin-bottom: .2em;
+}
+screen7.css?1603:110
+.q .top_question {
+    display: block !important;
+    min-height: 19px;
+}
+.q .top_question b.icon_required {
+    min-height: 16px;
+}
+.q .text_field {
+    border: 1px solid #CCCCCC;
+    color: #000000;
+    margin: 1px 0;
+    padding: 5px;
+    background: #FFFFFF url(/images/forms/field_bg.png) -4px -4px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+.q .drop_down {
+    background: #FFFFFF url(/images/forms/field_bg.png) -4px -4px;
+    border: 1px solid #CCCCCC;
+    color: #000000;
+    margin: 1px 0;
+    padding: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+.q .signature {
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 550px;
+}
+.q .signature-clear {
+    text-align: right;
+    width: 550px;
+}
+@media (max-width: 480px), only screen and (max-device-width: 480px) and (min-device-width: 320px)
+responsive7.css?1603:40
+.q .drop_down, .q .text_field, .q .file_upload, .q .signature, .q .signature-clear {
+    box-sizing: border-box;
+    width: 100% !important;
+}
+
+/* WAIVER: read_only */
+screen7.css?1603:509
+.read_only {
+    pointer-events: none;
+}
+
+/* WAIVER: input */
+user agent stylesheet
+input:disabled, textarea:disabled {
+    color: rgb(84, 84, 84);
+}
+user agent stylesheet
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+user agent stylesheet
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 11px system-ui;
+}
+user agent stylesheet
+input, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+
+/* WAIVER: full_width */
+.full_width {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100%;
+}
+
+/* WAIVER: full_width_space */
+.full_width_space {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* WAIVER: segment_header */
+.q  .segment_header {
+    background-repeat: repeat;
+}
+.segment_header {
+    margin: 1px;
+    color: #FFFFFF;
+    background: #008DF2;
+    width: auto;
+    background-repeat: repeat;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+@media (max-width: 480px), only screen and (max-device-width: 480px) and (min-device-width: 320px)
+responsive7.css?1603:118
+.segment_header {
+    width: auto !important;
+}
+
+/* WAIVER: Submit button stuff */
+.buttons_reverse {
+    direction: rtl;
+    text-align: center;
+}
+.outside_container .submit_button {
+    color: #000000;
+    background: #FFCC00;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+@media (max-width: 480px), only screen and (max-device-width: 480px) and (min-device-width: 320px)
+responsive7.css?1603:111
+.outside_container .submit_button {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    float: none !important;
+}
+screen7.css?1603:106
+.buttons_reverse .submit_button {
+    direction: ltr;
+}
+screen7.css?1603:4
+input[type="button"], input[type="submit"], input[type="reset"], button {
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+screen7.css?1603:420
+.submit_button {
+    display: inline-block;
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: center;
+    border-width: 1px;
+    transition: background .1s ease-out;
+    white-space: normal;
+}
+user agent stylesheet
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+user agent stylesheet
+input[type="button" i], input[type="submit" i], input[type="reset" i] {
+    -webkit-appearance: push-button;
+    user-select: none;
+    white-space: pre;
+}
+user agent stylesheet
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+user agent stylesheet
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 11px system-ui;
+}
+user agent stylesheet
+input, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
