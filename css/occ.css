@@ -89,10 +89,19 @@ body {
   padding-left: 15px;
 }
 
+#instafeed {
+  height: 30%;
+}
 .waiver-button {
 
 }
 
 .first-time-buttons {
 
+}
+
+.events-image {
+  width: 100%;
+  max-width: 250px;
+  float: right;
 }
