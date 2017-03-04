@@ -17,7 +17,7 @@ function toggleQuestion(e) {
 
 	// close the previous opened question
 	if( questionID != lastQ && lastQ != "") {
-		console.log("if");
+		//console.log("if");
 		var oldQuestion = $('#'+lastQ).text();
 		oldQuestion = oldQuestion.substring(2);
 		$('#'+lastQ).html("+ "+oldQuestion);

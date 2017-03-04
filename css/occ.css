@@ -109,3 +109,23 @@ h1 {
   max-width: 250px;
   float: right;
 }
+
+/* FAQ: question text */
+.accordion:hover {
+  cursor: pointer;
+}
+
+/* CONTACT: contact form containter */
+#contactForm {
+}
+
+
+/* CONTACT: message input text field */
+#message {
+
+}
+
+/* CONTACT: submit button */
+.right-align {
+  text-align: right;
+}
