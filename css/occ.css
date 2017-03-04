@@ -115,17 +115,17 @@ h1 {
   cursor: pointer;
 }
 
-/* CONTACT: contact form containter */
-#contactForm {
-}
-
-
-/* CONTACT: message input text field */
-#message {
+/* CONTACT: submit modal */
+.modal-dialog {
 
 }
 
-/* CONTACT: submit button */
+.modal-content {
+  /*margin: 0 auto;
+  vertical-align: middle;
+  width: 50%;*/
+}
+
 .right-align {
   text-align: right;
 }
