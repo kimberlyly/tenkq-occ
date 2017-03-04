@@ -9,6 +9,10 @@ body {
   height: 100%;
 }
 
+h1 {
+  text-transform: uppercase;
+}
+
 .item img {
   width: 100%;
 }
@@ -97,7 +101,7 @@ body {
 }
 
 .first-time-buttons {
-
+  
 }
 
 .events-image {
