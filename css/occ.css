@@ -93,10 +93,39 @@ h1 {
   padding-left: 15px;
 }
 
+#instafeed {
+  height: 30%;
+}
 .waiver-button {
 
 }
 
 .first-time-buttons {
+  
+}
 
+.events-image {
+  width: 100%;
+  max-width: 250px;
+  float: right;
+}
+
+/* FAQ: question text */
+.accordion:hover {
+  cursor: pointer;
+}
+
+/* CONTACT: submit modal */
+.modal-dialog {
+
+}
+
+.modal-content {
+  /*margin: 0 auto;
+  vertical-align: middle;
+  width: 50%;*/
+}
+
+.right-align {
+  text-align: right;
 }

@@ -13,19 +13,53 @@ var instagramJson = JSON.parse(instagramData);
 var instafeed = document.getElementById("instafeed");
 
 for (i = 0; i < instagramJson.items.length; i++) {
-  instafeed.innerHTML = instafeed.innerHTML + '<img src="' + instagramJson.items[i].images.standard_resolution.url + '">';
-  console.log(instagramJson.items[i].images.standard_resolution.url);
+  instafeed.innerHTML = instafeed.innerHTML + '<div class="item"><img src="' + instagramJson.items[i].images.low_resolution.url + '"></div>';
 }
 
-/*$.ajax({
-  method: "GET",
-  url: "https://www.instagram.com/ucsdclimbing/media/?size=L",
-  dataType: "json"
-}).done(function(result) {
-  var instafeed = document.getElementById("instafeed");
+$('#instafeed').slick({
+  centerMode: true,
+  centerPadding: '15px',
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  variableWidth: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
 
-  for (i = 0; i < result.items.length; i++) {
-    instafeed.innerHTML = instafeed.innerHTML + '<img src="' + result.items[i].images.standard_resolution.url + '">';
-    console.log(result.items[i].images.standard_resolution.url);
-  }
-}); */
+/*$('#instafeed').slickLightbox({
+    src: 'src',
+    itemSelector: '.item img'
+  }); */
