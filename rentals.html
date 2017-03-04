@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Membership</title>
+    <title>Rentals</title>
 
     <!-- Bootstrap core CSS -->
     <!-- Latest compiled and minified CSS -->
@@ -41,14 +41,14 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="hours-and-location.html">Hours & Location</a></li>
                 <li><a href="meet-the-staff.html">Meet the Staff</a></li>
+                <li><a href="hours-and-location.html">Hours and Location</a></li>
                 <li><a href="faq.html">FAQ</a></li>
               </ul>
             </li>
-            <li class="active"><a href="membership.html">Membership</a></li>
+            <li><a href="membership.html">Membership</a></li>
             <li><a href="events.html">Events</a></li>
-            <li><a href="rentals.html">Rentals</a></li>
+            <li class="active"><a href="rentals.html">Rentals</a></li>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -59,7 +59,7 @@
     <div class="section-hero first-time-hero">
       <img src="http://placehold.it/1600x300">
       <h1 class="section-hero-text">
-        <span>Membership</span>
+        <span>Private Rentals</span>
       </h1>
     </div>
 
@@ -67,16 +67,22 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1 class="section-header">Passes</h1>
+            <h1 class="section-header">Private Gym</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Climbing Center rentals are available for everyone including on-campus groups and the public.  Schedule a birthday party, a unique meeting with your coworkers, or bring just a group of friends and enjoy exclusive use of the gym.  Kids and adults of all ages will enjoy the thrill of indoor rock climbing.
             </p>
-            <a href="waiver.html">WAIVER</a>
+            <p>
+              <strong>Private Gym Rental Includes:</strong>
+              <br>
+              <ul>
+                <li>2 hours exclusive gym use</li>
+                <li>Instruction and supervision by Outback staff</li>
+                <li>All necessary climbing equipment</li>
+                <li>Available during our closed hours</li>
+                <li><strong>$170</strong> for first 10 climbers; (<strong>$153</strong> for UCSD affiliated groups)</li>
+                <li><strong>$8/additional climber</strong>. 30 climbers maximum.</li>
+              </ul>
+            </p>
           </div>
         </div>
       </div>
@@ -85,26 +91,59 @@
     <section class="primary-section">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <h1 class="section-header">Rates</h1>
-            <p>
-              INSERT TABLES FOR RATES
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
+            <form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputName" class="col-sm-2 control-label">Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputName" placeholder="ex. John Smith">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPhone" class="col-sm-2 control-label">Phone</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputPhone" placeholder="(858) 888-8888">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail" placeholder="me@example.com">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputDate" class="col-sm-2 control-label">Preferred Date</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputDate" placeholder="MM/DD/YY">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputGroupSize" class="col-sm-2 control-label">Group Size</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputGroupSize" placeholder="Max: 30">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputUCSD" class="col-sm-2 control-label">UCSD Affiliated?</label>
+    <div class="col-sm-10">
+      <input type="checkbox" value="yes" class="form-control" id="inputUCSD" placeholder="Yes">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputcomments" class="col-sm-2 control-label">Additional Comments</label>
+    <div class="col-sm-10">
+      <textarea class="form-control" id="inputComments" placeholder="Comments"></textarea>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+</form>
         </div>
       </div>
     </section>
 
-
-    <!-- footer -->
     <footer class="footer">
       <div class="social-media">
         <a href="https://www.facebook.com/groups/68473930484/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
