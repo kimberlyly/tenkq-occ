@@ -15,7 +15,7 @@ table, th, td
 
 }
 
-.center {
+.center-text {
 	width: 100%;
 	margin: auto;
 	text-align: center;
@@ -24,8 +24,4 @@ table, th, td
 .bolded {
 	font-weight: bold;
 	text-align: left;
-}
-
-.section-hero-text {
-	font-size: 10px
 }
