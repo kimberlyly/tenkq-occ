@@ -7,10 +7,14 @@ body {
   padding-top: 50px;
   margin-bottom: 50px;
   height: 100%;
+  /*font-family: ;*/
 }
 
+/* Largest heading text */
 h1 {
+  padding-top: 0;
   text-transform: uppercase;
+  /*color: red; /* font COLOR of largest heading text */
 }
 
 .item img {
@@ -28,9 +32,29 @@ h1 {
 .footer {
   position: absolute;
   bottom: 0px;
+  height: 60px;
   width: 100%;
-  background-color: #f5f5f5;
-  height: 50px;
+  padding: 10px;
+  background-color: #000000; /*#f5f5f5; /* background COLOR of footer */
+  color: white;
+}
+.footer .fa {
+  color: white;
+}
+.copyright {
+  text-align: left;
+}
+
+/* white bg section, put alongside .primary-section */
+.lighter-bg {
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+/* grey bg section, put alongside .primary-section */
+.darker-bg {
+  padding: 15px;
+  background-color: #ebebeb;
 }
 
 .section-header {
@@ -158,17 +182,28 @@ textarea {
   cursor: pointer;
 }
 
+/* FAQ: answer div */
+.panel {
+  box-shadow: 0 0px 0px rgba(0,0,0,.05);
+}
+
 /* CONTACT: submit modal */
 .modal-dialog {
-
 }
 
 .modal-content {
   /*margin: 0 auto;
   vertical-align: middle;
   width: 50%;*/
+  /*height: 200px;*/
+  top: 100%;
+  padding: 15px;
 }
 
 .right-align {
   text-align: right;
+}
+
+#contactSubmitOk {
+  width: 150px;
 }
