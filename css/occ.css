@@ -29,6 +29,10 @@ h1 {
   color: #000;
 }
 
+nav {
+  background-color: black;
+}
+
 .footer {
   position: absolute;
   bottom: 0px;
@@ -48,13 +52,13 @@ h1 {
 /* [fix padding of h1 pls] */
 /* white bg section, put alongside .primary-section */
 .lighter-bg {
-  padding: 15px;
+  padding-bottom: 20px;
   background-color: #ffffff;
 }
 
 /* grey bg section, put alongside .primary-section */
 .darker-bg {
-  padding: 15px;
+  padding-bottom: 20px;
   background-color: #ebebeb;
 }
 
