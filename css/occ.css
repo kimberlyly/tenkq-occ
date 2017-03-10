@@ -45,6 +45,7 @@ h1 {
   text-align: left;
 }
 
+/* [fix padding of h1 pls] */
 /* white bg section, put alongside .primary-section */
 .lighter-bg {
   padding: 15px;

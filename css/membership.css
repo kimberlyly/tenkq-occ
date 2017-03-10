@@ -3,12 +3,19 @@ table
   border-collapse: collapse;
   border-spacing: 1px;
   width: 100%;
+  background: white;
 }
 
-table, th, td
+th, td
 {
   padding: 5px;
   border: 1px solid black;
+}
+
+th {
+	background-color: #787878;
+	color: white;
+	text-transform: uppercase;
 }
 
 .table-head {
