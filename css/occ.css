@@ -199,9 +199,6 @@ nav {
   max-height: 400px;
   position: relative;
 }
-.waiver-button {
-
-}
 
 .events-image {
   width: 100%;
@@ -289,4 +286,15 @@ textarea {
 
 .primary-section {
   padding: 50px 0px;
+}
+
+.middle-content {
+  margin: auto;
+}
+
+@media only screen and (min-width: 800px) {
+  .middle-content {
+    width: 80%;
+    margin: auto;
+  }
 }

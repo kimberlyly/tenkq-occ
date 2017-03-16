@@ -1,6 +1,11 @@
 .center-text {
 	text-align: center;
-	margin: 0px auto;
+	margin: auto;
 	width: 75%;
 	display: block;
+}
+
+.middle-content {
+	width: 80%;
+	margin: auto;
 }
