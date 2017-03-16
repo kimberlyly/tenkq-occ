@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Poppins');
+
 html {
   position: relative;
   min-height: 100%;
@@ -7,10 +9,21 @@ body {
   padding-top: 50px;
   margin-bottom: 50px;
   height: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  line-height: 150%;
+  /*font-family: ;*/
 }
 
+/* Largest heading text */
 h1 {
+  padding-top: 0;
   text-transform: uppercase;
+}
+
+h1, h2, h3 {
+  font-family: 'Fjalla One', sans-serif;
+  color: #486c45;
 }
 
 .item img {
@@ -43,12 +56,37 @@ h1 {
   color: #000;
 }
 
+nav {
+  background-color: black;
+}
+
 .footer {
   position: absolute;
   bottom: 0px;
+  height: 60px;
   width: 100%;
-  background-color: #f5f5f5;
-  height: 50px;
+  padding: 10px;
+  background-color: #2f373a;
+  color: white;
+}
+.footer .fa {
+  color: white;
+}
+.copyright {
+  text-align: left;
+}
+
+/* [fix padding of h1 pls] */
+/* white bg section, put alongside .primary-section */
+.lighter-bg {
+  padding-bottom: 20px;
+  background-color: #ffffff;
+}
+
+/* grey bg section, put alongside .primary-section */
+.darker-bg {
+  padding-bottom: 20px;
+  background-color: #e4dfd5;
 }
 
 .section-header {
@@ -59,6 +97,10 @@ h1 {
   position: relative;
   max-height: 400px;
   overflow-y: hidden;
+  color: #fff;
+}
+
+.section-hero > h1 {
   color: #fff;
 }
 
@@ -120,9 +162,22 @@ h1 {
   font-size: 2em;
   background-color: #000;
   border: solid black;
-  width: 200px;
-  height: 50px;
-  margin-bottom: 20px;
+  width: 300px;
+  height: 60px;
+  margin-bottom: 40px;
+}
+
+.waiver-button {
+  color: #fff;
+  font-size: 2em;
+  background-color: #486c45;
+  border: solid black;
+  width: 300px;
+  height: 60px;
+  margin: 0px auto;
+  border: 0px;
+  display: block;
+  margin-top: 40px;
 }
 
 .map-section > img {
@@ -177,15 +232,22 @@ textarea {
   cursor: pointer;
 }
 
+/* FAQ: answer div */
+.panel {
+  box-shadow: 0 0px 0px rgba(0,0,0,.05);
+}
+
 /* CONTACT: submit modal */
 .modal-dialog {
-
 }
 
 .modal-content {
   /*margin: 0 auto;
   vertical-align: middle;
   width: 50%;*/
+  /*height: 200px;*/
+  top: 100%;
+  padding: 15px;
 }
 
 .right-align {
@@ -202,4 +264,29 @@ textarea {
   color: #fff;
   background-color: #000;
   text-align: center;
+}
+
+#contactSubmitOk {
+  width: 150px;
+}
+
+.navbar {
+  background-image: none;
+}
+
+.navbar-default .navbar-nav >li > a {
+  color: #fff;
+}
+.navbar-default {
+  background-color: #2f373a;
+  border: 0px;
+  color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.primary-section {
+  padding: 50px 0px;
 }
