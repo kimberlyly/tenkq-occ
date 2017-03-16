@@ -16,6 +16,24 @@ h1 {
 .item img {
   width: 100%;
 }
+
+.item {
+  max-height: 600px;
+}
+
+.insta-item img {
+  width: 100%;
+}
+
+.insta-item {
+  margin: 0px 5px;
+}
+
+#instafeed {
+  height: 30%;
+  margin: 0 -5px;
+}
+
 .icon-bar {
   color: #000;
   background-color: #000;
@@ -39,7 +57,11 @@ h1 {
 
 .section-hero {
   position: relative;
+  max-height: 400px;
+  overflow-y: hidden;
+  color: #fff;
 }
+
 .section-hero > img {
   width: 100%;
 }
@@ -118,14 +140,11 @@ h1 {
   padding-left: 15px;
 }
 
-#instafeed {
-  height: 30%;
+.wall-image img {
+  max-height: 400px;
+  position: relative;
 }
 .waiver-button {
-
-}
-
-.first-time-buttons {
 
 }
 
@@ -171,4 +190,16 @@ textarea {
 
 .right-align {
   text-align: right;
+}
+
+.wall-caption {
+  top: 50px;
+  min-height: 20px;
+  left: 80px;
+  position: absolute;
+  width: 50px;
+  z-index: 2;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
 }

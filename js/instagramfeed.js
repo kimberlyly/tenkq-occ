@@ -13,7 +13,7 @@ var instagramJson = JSON.parse(instagramData);
 var instafeed = document.getElementById("instafeed");
 
 for (i = 0; i < instagramJson.items.length; i++) {
-  instafeed.innerHTML = instafeed.innerHTML + '<div class="item"><img src="' + instagramJson.items[i].images.low_resolution.url + '"></div>';
+  instafeed.innerHTML = instafeed.innerHTML + '<div class="insta-item"><img src="' + instagramJson.items[i].images.low_resolution.url + '"></div>';
 }
 
 $('#instafeed').slick({
