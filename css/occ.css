@@ -294,6 +294,11 @@ textarea {
   width: 150px;
 }
 
+/* WAIVER: form container */
+#waiverForm {
+  background-color: #ffffff;
+}
+
 .navbar {
   background-image: none;
 }
