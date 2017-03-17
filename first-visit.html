@@ -18,13 +18,19 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <!-- slickbox theme -->
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+
+    <!-- slick default theme -->
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+
     <!-- Custom styles for this template -->
     <link href="css/occ.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/first-time.css">
   </head>
 
   <body>
 
+    <!-- NAVBAR -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -38,13 +44,14 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="first-visit.html">Free For First Visit</a></li>
+            <li class="active"><a href="first-visit.html">First Visit</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="hours-and-location.html">Hours & Location</a></li>
+                <li><a href="hours-and-location.html">Hours &amp; Location</a></li>
                 <li><a href="meet-the-staff.html">Meet the Staff</a></li>
                 <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
               </ul>
             </li>
             <li><a href="pricing.html">Pricing</a></li>
@@ -56,9 +63,9 @@
       </div>
     </nav>
 
-
     <!-- Image header -->
     <div class="section-hero first-visit-hero">
+      <div class="overlay"></div>
       <img src="assets/img/OCC_18.gif">
       <h1 class="section-hero-text">
         <span>First Visit</span>
@@ -72,6 +79,7 @@
             <h1 class="section-header">Free first time every quarter!</h1>
           </div>
         </div>
+        <br>
         <div class="row middle-content">
           <div class="col-md-12">
             <p>
@@ -79,9 +87,19 @@
             </p>
           </div>
         </div>
-        <div class"row">
-          <div>
+        <br>
+        <div class="row middle-content">
+          <div class="col-md-4 steps">
+            <p><strong>Step One:</strong> Complete Online Waiver</p>
             <button onclick="window.location.href='waiver.html'" class="waiver-button">Waiver</button>
+          </div>
+          <div class="col-md-4 steps">
+            <p><strong>Step Two:</strong> Visit the OCC for FREE during open hours</p>
+            <button onclick="window.location.href='hours-and-location.html'" class="waiver-button">Hours</button>
+          </div>
+          <div class="col-md-4 steps">
+            <p><strong>Step Three:</strong> Climb, get hooked and buy a membership!</p>
+            <button onclick="window.location.href='pricing.html'" class="waiver-button">Prices</button>
           </div>
         </div>
       </div>
@@ -92,30 +110,22 @@
         <div class="row">
           <div class="col-md-12">
             <h1 class="section-header">Explore</h1>
+            <div id="explorefeed">
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <p>
-              Image gallery will go here.<br>
-            </p>
-          </div>
-        </div>
+      </div>
     </section>
 
     <section class="primary-section lighter-bg">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1 class="section-header">MORE INFORMATION</h1>
+            <h1 class="section-header">Still have questions?</h1>
+            <br>
             <div class="center-text">
-              <a href="hours-and-location.html">Hours &amp; Location</a>
-              <br>
-              <a href="membership.html">Membership Passes</a>
-              <br>
-              <a href="equipment-rentals.html">Equipment Rentals</a>
-              <br>
-              <a href="faq.html">FAQ</a>
+              <button onclick="window.location.href='faq.html'" class="cta-button">FAQ</button>
+              <button onclick="window.location.href='contact.html'" class="cta-button">Contact Us</button>
             </div>
           </div>
         </div>
@@ -123,7 +133,6 @@
     </section>
     <br>
 
-    <!-- footer -->
     <footer class="footer">
       <div class="social-media">
         <a href="https://www.facebook.com/groups/68473930484/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
@@ -145,6 +154,6 @@
     <!-- slick lightbox -->
     <script type="text/javascript" src="assets/slick/slick.js"></script>
     <!-- Instafeed -->
-    <script type="text/javascript" src="js/instagramfeed.js"></script>
+    <script type="text/javascript" src="js/explorefeed.js"></script>
   </body>
 </html>
