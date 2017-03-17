@@ -10,7 +10,7 @@ body {
   margin-bottom: 50px;
   height: 100%;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.8em;
   line-height: 150%;
   /*font-family: ;*/
 }
@@ -129,9 +129,14 @@ nav {
     font-size: 3em;
     text-transform: uppercase;
   }
+
+  .middle-content {
+    width: 80%;
+    margin: auto;
+  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .section-hero-text {
     position: absolute;
     top: 40%;
@@ -139,6 +144,19 @@ nav {
     text-align: center;
     font-size: 4em;
     text-transform: uppercase;
+  }
+
+  .steps-bar {
+    display: none;
+  }
+
+  .steps + hr + .steps {
+    border-left: 1px #ccc solid;
+    /*background-color: #e4dfd5;*/
+  }
+
+  .waiver-button {
+    bottom: 0px;
   }
 }
 
@@ -178,7 +196,6 @@ nav {
   border: 0px;
   display: block;
   position: absolute;
-  bottom: 40px;
 }
 
 .map-section > img {
@@ -302,13 +319,6 @@ textarea {
   margin: auto;
 }
 
-@media only screen and (min-width: 800px) {
-  .middle-content {
-    width: 80%;
-    margin: auto;
-  }
-}
-
 .overlay {
     display: block;
     position: absolute;
@@ -326,6 +336,7 @@ textarea {
 
 .steps {
   height: 150px;
+  text-align: center;
 }
 
 .dropdown-menu {
@@ -344,3 +355,7 @@ textarea {
   max-width: 500px;
   display: block;
 }
+
+/*.steps:nth-child(even) {
+  background-color: #e4dfd5;
+} */
