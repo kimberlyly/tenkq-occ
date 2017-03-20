@@ -274,6 +274,11 @@ textarea {
 }
 
 /* FAQ: question text */
+.accordion {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.2em;
+  padding-top: 5px;
+}
 .accordion:hover {
   cursor: pointer;
 }
@@ -312,12 +317,25 @@ textarea {
   text-align: center;
 }
 
+.modal-title {
+  text-transform: uppercase;
+}
+
 #contactSubmitOk {
   width: 150px;
 }
 
+/* WAIVER: form container */
+#waiverForm {
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .navbar {
   background-image: none;
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
 }
 
 .navbar-default .navbar-nav >li > a {

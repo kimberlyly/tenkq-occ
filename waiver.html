@@ -66,21 +66,118 @@
       </h1>
     </div>
 
-    <section class="primary-section">
+    <section class="primary-section lighter-bg">
       <div class="container">
-        <div class="row">
+        <div class="row middle-content">
           <div class="col-md-12">
-            <h1 class="section-header">OCC Waiver</h1>
-            <p>
-              Additional waiver information here!
-            </p>
+            <h1 class="section-header">Liability Waiver</h1>
+              <p><b>Please complete the form below. It is required prior to climbing at the UC San Diego Outback Climbing Center.</b></p>
+              <p><b>Liability Waiver:</b> All participants must complete this waiver prior to participation. All minor participants must have this form reviewed and signed by a parent/legal guardian prior to climbing.</p>
+            </div>
           </div>
+        </div>
+      </section>
+    </body>
 
-          <div class="col-md-12">
+    <section class="primary-section darker-bg">
+      <div class="container">
+        <div class="row middle-content">
+            <h1 class="section-header">Waiver Form</h1>
+            <div class="col-md-12" id="waiverForm">
+              <!-- Waiver form -->
+              <form>
+                <div class="form-group">
+                  <label for="firstName">Participant First Name:</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Participant Last Name:</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                  <label for="age">Participant Age:</label>
+                  <input type="text" class="form-control" id="age" placeholder="Age">
+                </div>
+                <div class="form-group">
+                  <label for="email">Participant Email Address:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="emergencyName">Emergency Contact First and Last Name:</label>
+                  <input type="text" class="form-control" id="emergencyName" placeholder="Emergency Contact First and Last Name">
+                </div>
+                <div class="form-group">
+                  <label for="emergencyPhone">Emergency Contact Phone:</label>
+                  <input type="text" class="form-control" id="emergencyPhone" placeholder="Emergency Contact Phone">
+                </div>
+
+                <p><b>Waiver:</b> In consideration of being permitted to participate in any way in UC San Diego Recreation programs hereinafter called "The Activity", I, for myself, my heirs, personal representatives or assigns, <b>do hereby release, waive, discharge, and covenant not to sue</b> The Regents of the University of California, its officers, employees, and agents from liability <b>from any and all claims including the negligence of The Regents of the University of California, its officers, employees and agents, resulting in personal injury, accidents or illnesses (including death), and property loss arising from, but not limited to, participation in The Activity.</b></p>
+ 
+                <p><b>I have read and accepted the terms of the online waiver listed above.</b></p>
+                <!-- Text input -->
+                <!--<div class="form-group">
+                  <label for="message">Message:</label><br>
+                    <textarea class="form-control" id="inputComments" placeholder="Comments"></textarea>
+                </div>-->
+
+                <div class="form-group">
+                  <label for="signatureWaiver">Participant Electronic Signature - Waiver:</label>
+                  <input type="text" class="form-control" id="signatureWaiver" placeholder="Participant Electronic Signatures">
+                </div>
+                <div class="form-group">
+                  <label for="guardianWaiver">Guardian Electronic Signature - Waiver:</label>
+                  <input type="text" class="form-control" id="guardianWaiver" placeholder="Guardian Electronic Signature">
+                </div>
+
+                <p><b>Assumption of Risks:</b> Participation in The Activity carries with it certain inherent risks that cannot be eliminated regardless of the care taken to avoid injuries. The specific risks vary from one activity to another, but the risks range from 1) minor injuries such as scratches, bruises, and sprains 2) major injuries such as eye injury or loss of sight, joint or back injuries, heart attacks, and concussions to 3) catastrophic injuries including paralysis and death.</p>
+
+                <p><b>I have read the previous paragraphs and I know, understand, and appreciate these and other risks that are inherent in The Activity. I hereby assert that my participation is voluntary and that I knowingly assume all such risks.</b></p>
+
+                <p><b>Indemnification and Hold Harmless:</b> I also agree to INDEMNIFY AND HOLD The Regents of the University of California HARMLESS from any and all claims, actions, suits, procedures, costs, expenses, damages and liabilities, including attorney’s fees brought as a result of my involvement in The Activity and to reimburse them for any such expenses incurred.</p>
+
+                <p><b>Severability:</b> The undersigned further expressly agrees that the foregoing waiver and assumption of risks agreement is intended to be as broad and inclusive as is permitted by the law of the State of California and that if any portion thereof is held invalid, it is agreed that the balance shall, notwithstanding, continue in full legal force and effect.</p>
+
+                <p><b>Acknowledgment of Understanding:</b> I have read this waiver of liability, assumption of risk, and indemnity agreement, fully understand its terms, and <b>understand that I am giving up substantial rights, including my right to sue</b>. I acknowledge that I am signing the agreement freely and voluntarily, and <b>intend by my signature to be a complete and unconditional release of all liability</b> to the greatest extent allowed by law.</p>
+
+                <div class="form-group">
+                  <label for="signatureAcknowledgement">Participant Electronic Signature - Acknowledgement of Understand:</label>
+                  <input type="text" class="form-control" id="signatureAcknowledgement" placeholder="Participant Electronic Signatures">
+                </div>
+                <div class="form-group">
+                  <label for="guardianAcknowledgement">Guardian Electronic Signature - Acknowledgement of Understanding:</label>
+                  <input type="text" class="form-control" id="guardianAcknowledgement" placeholder="Guardian Electronic Signature">
+                </div>
+              </form>
+            </div>
+
+            <!-- Submit button -->
+            <div class="right-align">
+              <button type="submit" class="btn btn-default" id="contactSubmit" data-toggle="modal" data-target="#myModal">Submit</button>
+            </div>
+
+            <!-- Submit modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog modal-sm">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <center><h3 class="modal-title"><i class="fa fa-check-circle-o" aria-hidden="true"></i>
+ Submitted!</h3><br>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="contactSubmitOk">OK</button></center>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+
+          <!--<div class="col-md-12">
             <h1 class="section-header">Waiver Form</h1>
 
 <p>
-<!--<style type="text/css" media="all">
+<style type="text/css" media="all">
 /* LOOK AND FEEL */
 body{
   background: #ffffff;
@@ -341,17 +438,17 @@ tr.highlight td{
 
 /* END LOOK AND FEEL */
 </style>-->
-<form method="post" id="FSForm" action="https://fs23.formsite.com/res/submit;jsessionid=BFA42D75C556F53EAAC3ADFBB53FEC32" enctype="application/x-www-form-urlencoded" onsubmit="return Vromansys.Form.processSubmit(this);">
+<!--<form method="post" id="FSForm" action="https://fs23.formsite.com/res/submit;jsessionid=BFA42D75C556F53EAAC3ADFBB53FEC32" enctype="application/x-www-form-urlencoded" onsubmit="return Vromansys.Form.processSubmit(this);">
 <div style="display:none;">
 <input type="hidden" name="locid" value="outback/OCCwaiver">
 <input type="hidden" name="EParam" value="AT1kKIiyxDxJVGxIIvDwqKeLTfEDMMCuSqyyPsuNoNmWcf02dgS1bqsKHTmuxvva">
 <input type="hidden" name="ElapsedTime" id="ElapsedTime" value="0">
 <input type="hidden" name="Referrer" id="Referrer" value="">
 <input type="text" name="subject_line" id="subject_line" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"><label for="subject_line">subject_line</label>
-</div>
+</div>-->
 
 <!-- BEGIN_ITEMS -->
-<div class="form_table">
+<!--<div class="form_table">
 
 <div class="clear"></div>
 
@@ -542,9 +639,9 @@ tr.highlight td{
 </div>
 <div class="clear"></div>
 
-</div>
+</div>-->
 <!-- END_ITEMS -->
-<script type="text/javascript">var itemRules={70:{"criteria":[{"item":4,"answer":"17","operator":">"}],"action":"show","join":"||"},36:{"criteria":[{"item":4,"answer":"17","operator":">"}],"action":"hide","join":"||"},39:{"criteria":[{"item":4,"answer":"17","operator":">"}],"action":"hide","join":"||"},82:{"criteria":[{"item":4,"answer":"17","operator":">"}],"action":"hide","join":"||"}};</script>
+<!--<script type="text/javascript">var itemRules={70:{"criteria":[{"item":4,"answer":"17","operator":">"}],"action":"show","join":"||"},36:{"criteria":[{"item":4,"answer":"17","operator":">"}],"action":"hide","join":"||"},39:{"criteria":[{"item":4,"answer":"17","operator":">"}],"action":"hide","join":"||"},82:{"criteria":[{"item":4,"answer":"17","operator":">"}],"action":"hide","join":"||"}};</script>
 <input type="hidden" name="EParam" value="paQrVSPExahQEXFSBcy4WPi9dz43Y1Fg4VHdbuSA3O/4hRoKHO9jRQ==">
 <div class="outside_container">
 <div class="buttons_reverse"><input type="submit" name="Submit" value="Submit" class="submit_button" id="FSsubmit">
@@ -561,7 +658,7 @@ tr.highlight td{
 
           </div>
         </div>
-    </section>
+    </section>-->
 
     </div> <!-- /container -->
     <footer class="footer">
@@ -583,5 +680,7 @@ tr.highlight td{
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Font awesome -->
     <script src="https://use.fontawesome.com/91c786b0d4.js"></script>
+    <!-- Custom JS -->
+    <script src="js/contact.js"></script>
   </body>
 </html>
