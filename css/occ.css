@@ -22,8 +22,9 @@ h1 {
 }
 
 h1, h2, h3 {
-  font-family: 'Fjalla One', sans-serif;
-  color: #486c45;
+  font-family: 'Poppins', sans-serif;
+  color: #38554c;
+  font-weight: 700;
 }
 
 .item img {
@@ -66,7 +67,7 @@ nav {
   height: 60px;
   width: 100%;
   padding: 10px;
-  background-color: #2f373a;
+  background-color: #000;
   color: white;
 }
 .footer .fa {
@@ -86,7 +87,7 @@ nav {
 /* grey bg section, put alongside .primary-section */
 .darker-bg {
   padding-bottom: 20px;
-  background-color: #e4dfd5;
+  background-color: #e2e3e2;
 }
 
 .section-header {
@@ -108,6 +109,9 @@ nav {
   width: 100%;
 }
 
+.logo {
+  width: 200px;
+}
 
 @media (min-width: 400px) {
   .section-hero-text {
@@ -118,6 +122,7 @@ nav {
     font-size: 2em;
     text-transform: uppercase;
   }
+
 }
 
 @media (min-width: 768px) {
@@ -133,6 +138,14 @@ nav {
   .middle-content {
     width: 80%;
     margin: auto;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .navbar-right {
+    font-size: 14px;
   }
 }
 
@@ -158,6 +171,14 @@ nav {
   .waiver-button {
     bottom: 0px;
   }
+
+  .logo {
+    width: 200px;
+  }
+
+  .navbar-right {
+    font-size: 18px;
+  }
 }
 
 .social-media {
@@ -174,6 +195,7 @@ nav {
   position: fixed;
   bottom: 10px;
   right: 10px;
+  display: none;
 }
 
 .carousel-button {
@@ -302,8 +324,8 @@ textarea {
   color: #fff;
 }
 .navbar-default {
-  background-color: #2f373a;
-  border: #2f373a;
+  background-color: #000;
+  border: #000;
   color: #fff;
 }
 
@@ -327,6 +349,17 @@ textarea {
     top: 0px;
     left: 0px;
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+.homepage-overlay {
+  display: block;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+}
+
+.homepage-overlay img {
+  width: 40%;
 }
 
 .shoes {
@@ -356,6 +389,37 @@ textarea {
   display: block;
 }
 
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border: 0px;
+}
 /*.steps:nth-child(even) {
   background-color: #e4dfd5;
 } */
+
+.navbar-brand {
+  display: inline-block;
+  height: 100px;
+}
+
+.navbar-nav {
+  margin-top: 25px;
+}
+
+.navbar-toggle {
+  margin-top: 25px;
+}
+
+.mountain {
+  display: block;
+  margin-top: 40px;
+  /*margin-bottom: -50px;*/
+}
+
+.mountain img {
+  width: 100%;
+}
+
+section:last-of-type {
+  padding-bottom: 0px;
+}
