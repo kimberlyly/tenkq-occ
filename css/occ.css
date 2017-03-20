@@ -10,9 +10,7 @@ body {
   margin-bottom: 50px;
   height: 100%;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8em;
   line-height: 150%;
-  /*font-family: ;*/
 }
 
 /* Largest heading text */
@@ -22,9 +20,8 @@ h1 {
 }
 
 h1, h2, h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
   color: #38554c;
-  font-weight: 700;
 }
 
 .item img {
@@ -41,6 +38,11 @@ h1, h2, h3 {
 
 .insta-item {
   margin: 0px 5px;
+}
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #instafeed {
@@ -111,74 +113,6 @@ nav {
 
 .logo {
   width: 200px;
-}
-
-@media (min-width: 400px) {
-  .section-hero-text {
-    position: absolute;
-    top: 20%;
-    width: 100%;
-    text-align: center;
-    font-size: 2em;
-    text-transform: uppercase;
-  }
-
-}
-
-@media (min-width: 768px) {
-  .section-hero-text {
-    position: absolute;
-    top: 30%;
-    width: 100%;
-    text-align: center;
-    font-size: 3em;
-    text-transform: uppercase;
-  }
-
-  .middle-content {
-    width: 80%;
-    margin: auto;
-  }
-
-  .logo {
-    width: 150px;
-  }
-
-  .navbar-right {
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 992px) {
-  .section-hero-text {
-    position: absolute;
-    top: 40%;
-    width: 100%;
-    text-align: center;
-    font-size: 4em;
-    text-transform: uppercase;
-  }
-
-  .steps-bar {
-    display: none;
-  }
-
-  .steps + hr + .steps {
-    border-left: 1px #ccc solid;
-    /*background-color: #e4dfd5;*/
-  }
-
-  .waiver-button {
-    bottom: 0px;
-  }
-
-  .logo {
-    width: 200px;
-  }
-
-  .navbar-right {
-    font-size: 18px;
-  }
 }
 
 .social-media {
@@ -252,12 +186,6 @@ th {
 .events-image {
   width: 100%;
   max-width: 250px;
-  float: right;
-}
-
-.staff-image {
-  width: 100%;
-  max-width: 150px;
   float: right;
 }
 
@@ -440,4 +368,126 @@ textarea {
 
 section:last-of-type {
   padding-bottom: 0px;
+}
+
+.staff-image {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.profile {
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.profile-name:nth-child(odd), .profile-description strong {
+  font-family: 'Fjalla One', sans serif;
+}
+
+.profile-description {
+  font-size: 16px;
+}
+
+.profile-name:nth-child(even) {
+  font-style: italic;
+}
+
+@media (min-width: 320px) {
+  .section-hero-text {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+
+  .section-header {
+    font-size: 24px;
+  }
+
+  body {
+    font-size: 1.5em;
+  }
+
+  .profile-name {
+    display: inline-block;
+    font-size: 1em;
+  }
+
+  .staff-image {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-hero-text {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+  }
+
+  .section-header {
+    font-size: 36px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .navbar-right {
+    font-size: 14px;
+  }
+
+  body {
+    font-size: 1.8em;
+  }
+
+  .profile-name {
+    display: block;
+  }
+
+  .staff-image {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-hero-text {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 4em;
+    text-transform: uppercase;
+  }
+
+  .steps-bar {
+    display: none;
+  }
+
+  .steps + hr + .steps {
+    border-left: 1px #ccc solid;
+    /*background-color: #e4dfd5;*/
+  }
+
+  .waiver-button {
+    bottom: 0px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .navbar-right {
+    font-size: 18px;
+  }
+
+  .staff-image {
+    width: 100%;
+  }
 }
