@@ -59,7 +59,7 @@ $('#instafeed').slick({
   ]
 });
 
-/*$('#instafeed').slickLightbox({
+$('#instafeed').slickLightbox({
     src: 'src',
-    itemSelector: '.item img'
-  }); */
+    itemSelector: '.insta-item img'
+  });
