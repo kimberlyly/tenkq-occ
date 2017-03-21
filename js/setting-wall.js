@@ -4,7 +4,7 @@ var resetdates = ["1/1", "2/2", "3/3", "4/4", "5/5", "6/6"]
 var settingwall = document.getElementById("setting-wall");
 
 for (var i = 0; i < walls.length; i++) {
-  settingwall.innerHTML = settingwall.innerHTML + '<div class="wall-image" data-toggle="tooltip" title="hello"><img src="assets/img/' + walls[i] + '"><div class="wall-caption">' + wallnames[i] + '<br>' + resetdates[i] + '</div></div>';
+  settingwall.innerHTML = settingwall.innerHTML + '<div class="wall-image" data-toggle="tooltip" title="hello"><img src="assets/img/' + walls[i] + '"><div class="slide__caption"><strong>' + wallnames[i] + '</strong><br>' + resetdates[i] + '</div></div>';
 }
 
 $('#setting-wall').slick({
@@ -32,7 +32,7 @@ $('#setting-wall').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         dots: false,
-        arrows: false
+        arrows: true
       }
     },
     {
@@ -41,7 +41,7 @@ $('#setting-wall').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: false,
-        arrows: false
+        arrows: true
       }
     }
     // You can unslick at a given breakpoint now by adding:

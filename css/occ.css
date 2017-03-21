@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Poppins');
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 html {
   position: relative;
   min-height: 100%;
@@ -19,7 +23,7 @@ h1 {
   text-transform: uppercase;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Fjalla One', sans-serif;
   color: #38554c;
 }
@@ -66,22 +70,22 @@ nav {
 .footer {
   position: absolute;
   bottom: 0px;
-  height: 60px;
+  height: 70px;
   width: 100%;
   padding: 10px;
   background-color: #000;
   color: white;
   text-align: center;
+  overflow: hidden;
 }
 
 .copyright {
   font-size: 11px;
+  margin: 0px auto;
   margin-bottom: 0px;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  color: #555;
+  color: #1077a1;
 }
+
 .footer .fa {
   color: white;
 }
@@ -163,12 +167,22 @@ nav {
   position: absolute;
 }
 
+.map-section {
+  margin-top: 15px;
+}
+.map-section span {
+  font-size: 0.8em;
+  font-style: italic;
+}
 .map-section > img {
   display: block;
   width: 100%;
   margin: 0px auto;
 }
 
+.driving-directions {
+  padding-left: 15px;
+}
 .centered-table {
   margin: 0px auto;
   border: 0px;
@@ -190,10 +204,6 @@ th {
 .wall-image img {
   max-height: 400px;
   position: relative;
-}
-
-.wall-image {
-  background-color: #ccc;
 }
 
 .event-image {
@@ -253,16 +263,13 @@ textarea {
   text-align: right;
 }
 
-.wall-caption {
-  top: 50px;
-  min-height: 20px;
-  left: 80px;
-  position: absolute;
-  width: 50px;
+.slide__caption {
   z-index: 2;
   color: #fff;
   background-color: #000;
   text-align: center;
+  width: 40%;
+  margin: 0px auto;
 }
 
 .modal-title {
@@ -441,7 +448,8 @@ section:last-of-type {
 
 .profile-name:nth-child(odd),
 .profile-description strong,
-.event-description strong {
+.event-description strong,
+.slide__caption strong {
   font-family: 'Fjalla One', sans serif;
 }
 
