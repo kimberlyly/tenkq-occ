@@ -153,7 +153,7 @@ nav {
   bottom: -10px;
 }
 
-a.carousel-control:link, a:visited {
+a.carousel-control:link, a.carousel-control:visited {
   color: #fff;
 }
 
