@@ -1,19 +1,8 @@
-function readStringFromFileAtPath(pathOfFileToReadFrom) {
-  var request = new XMLHttpRequest();
-  request.open("GET", "https://kimberlyly.github.io/tenkq-occ/" + pathOfFileToReadFrom, false);
-  request.send(null);
-  var returnValue = request.responseText;
-
-  return returnValue;
-  }
-
-
-var instagramData = readStringFromFileAtPath ( "assets/instagramdata.txt" );
-var instagramJson = JSON.parse(instagramData);
+var images = ["explore_1.jpg", "explore_2.jpg", "explore_3.jpg", "explore_4.jpg", "explore_5.jpg", "explore_7.jpg"]
 var explorefeed = document.getElementById("explorefeed");
 
-for (i = 0; i < instagramJson.items.length; i++) {
-  explorefeed.innerHTML = explorefeed.innerHTML + '<div class="insta-item"><img src="' + instagramJson.items[i].images.low_resolution.url + '"></div>';
+for (i = 0; i < images.length; i++) {
+  explorefeed.innerHTML = explorefeed.innerHTML + '<div class="insta-item"><img src="assets/img/' + images[i] + '"></div>';
 }
 
 $('#explorefeed').slick({
@@ -38,7 +27,7 @@ $('#explorefeed').slick({
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         dots: false,
         arrows: false

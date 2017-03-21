@@ -8,7 +8,8 @@ for (var i = 0; i < walls.length; i++) {
 }
 
 $('#setting-wall').slick({
-  centerMode: false,
+  centerMode: true,
+  initialSlide: 2,
   centerPadding: '15px',
   dots: false,
   infinite: false,
