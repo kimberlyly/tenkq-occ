@@ -71,12 +71,19 @@ nav {
   padding: 10px;
   background-color: #000;
   color: white;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 11px;
+  margin-bottom: 0px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: #555;
 }
 .footer .fa {
   color: white;
-}
-.copyright {
-  text-align: left;
 }
 
 /* [fix padding of h1 pls] */
@@ -117,14 +124,16 @@ nav {
 
 .social-media {
   text-align: center;
-  vertical-align: middle;
-  line-height: 50px;
+  vertical-align: top;
 }
 
 .social-media a + a {
   margin-left: 20px;
 }
 
+.social-media img {
+  height: 36px;
+}
 .top-button {
   position: fixed;
   bottom: 10px;
@@ -156,7 +165,7 @@ nav {
 
 .map-section > img {
   display: block;
-  width: 80%;
+  width: 100%;
   margin: 0px auto;
 }
 
@@ -183,10 +192,21 @@ th {
   position: relative;
 }
 
-.events-image {
+.wall-image {
+  background-color: #ccc;
+}
+
+.event-image {
+  text-align: center;
+}
+
+.event-image img {
   width: 100%;
   max-width: 250px;
-  float: right;
+}
+
+.event-description {
+
 }
 
 .row-padding {
@@ -266,9 +286,41 @@ textarea {
   text-transform: uppercase;
 }
 
+.navbar-default .navbar-nav > .active{
+   color: #fff;
+  background: #555;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:active {
+     color: #fff;
+     background: #555;
+}
 .navbar-default .navbar-nav >li > a {
   color: #fff;
 }
+
+a.first-visit-link:hover {
+  color: #1077a1 !important;
+}
+
+a.about-link:hover {
+  color: #9c073b !important;
+}
+
+a.pricing-link:hover {
+  color: #f0652f !important;
+}
+
+a.events-link:hover {
+  color: #fcf272 !important;
+}
+
+a.rentals-link:hover {
+  color: #39554c !important;
+}
+
 .navbar-default {
   background-color: #000;
   border: #000;
@@ -326,7 +378,7 @@ textarea {
   color: #fff;
   font-size: 1.5em;
   background-color: #486c45;
-  border: solid black;
+  border: 0px;
   width: 90%;
   height: 50px;
   margin: 10px auto;
@@ -359,11 +411,17 @@ textarea {
 .mountain {
   display: block;
   margin-top: 40px;
-  /*margin-bottom: -50px;*/
+  max-height: 200px;
+  background-image: url("../assets/img/mountains.png");
+  background-repeat: repeat-x;
+  background-position: 0px -1px;
+  padding-bottom: 200px;
+  border-top: none;
 }
 
 .mountain img {
-  width: 100%;
+  max-height: 200px;
+  visibility: hidden;
 }
 
 section:last-of-type {
@@ -381,7 +439,9 @@ section:last-of-type {
   margin-bottom: 15px;
 }
 
-.profile-name:nth-child(odd), .profile-description strong {
+.profile-name:nth-child(odd),
+.profile-description strong,
+.event-description strong {
   font-family: 'Fjalla One', sans serif;
 }
 
@@ -419,6 +479,10 @@ section:last-of-type {
   .staff-image {
     width: 80%;
   }
+
+  .event-description {
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -453,6 +517,10 @@ section:last-of-type {
 
   .staff-image {
     width: 100%;
+  }
+
+  .event-description {
+    text-align: left;
   }
 }
 
