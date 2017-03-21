@@ -662,6 +662,9 @@ section:last-of-type {
     height: 100px;
     text-align: center;
   }
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #555;
+  }
 }
 
 @media (min-width: 992px) {
