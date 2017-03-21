@@ -29,7 +29,7 @@ h1, h2, h3, h4 {
 }
 
 a:link, a:visited {
-  color: #1077a1;
+  color: #0076a3;
 }
 
 .item img {
@@ -419,8 +419,12 @@ a.rentals-link:hover {
 }
 
 .steps {
-  height: 150px;
   text-align: center;
+}
+
+.steps button {
+  position: absolute;
+  bottom: 0;
 }
 
 .dropdown-menu {
@@ -501,6 +505,9 @@ section:last-of-type {
 
 .profile-description {
   font-size: 16px;
+  background-color: #e2e3e2;
+  padding: 10px;
+  margin-bottom: 15px;
 }
 
 .profile-name:nth-child(even) {
@@ -570,6 +577,11 @@ section:last-of-type {
   .navbar-nav>li>a {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  .steps {
+    height: 100px;
+    text-align: center;
   }
 }
 
@@ -641,6 +653,11 @@ section:last-of-type {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
+  .steps {
+    height: 100px;
+    text-align: center;
+  }
 }
 
 @media (min-width: 992px) {
@@ -686,5 +703,10 @@ section:last-of-type {
   .navbar-nav>li>a {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  .steps {
+    height: 150px;
+    text-align: center;
   }
 }
