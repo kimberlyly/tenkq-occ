@@ -287,6 +287,23 @@ textarea {
   border: 0px;
   font-family: 'Poppins', sans-serif;
 }
+.submit-button:hover {
+  color: #fff;
+  background-color: #486c45;
+}
+.submit-button:active {
+  color: #fff;
+  background-color: #486c45;
+}
+.submit-button:visited {
+  color: #fff;
+  background-color: #486c45;
+}
+.submit-button:focus {
+  color: #fff;
+  background-color: #486c45;
+}
+
 /* WAIVER: form container */
 #waiverForm {
   background-color: #ffffff;
