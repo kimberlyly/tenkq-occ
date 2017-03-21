@@ -275,6 +275,14 @@ textarea {
   width: 150px;
 }
 
+.submit-button {
+  color: #fff;
+  font-size: 1em;
+  background-color: #486c45;
+  background-image: none;
+  border: 0px;
+  font-family: 'Poppins', sans-serif;
+}
 /* WAIVER: form container */
 #waiverForm {
   background-color: #ffffff;

@@ -60,7 +60,8 @@
 
     <!-- Image header -->
     <div class="section-hero first-visit-hero">
-      <img src="http://placehold.it/1600x300">
+      <div class="overlay"></div>
+      <img src="assets/img/waiver.jpg">
       <h1 class="section-hero-text">
         <span>Waiver</span>
       </h1>
@@ -79,10 +80,9 @@
       </section>
     </body>
 
-    <section class="primary-section darker-bg">
+    <section class="primary-section">
       <div class="container">
         <div class="row middle-content">
-            <h1 class="section-header">Waiver Form</h1>
             <div class="col-md-12" id="waiverForm">
               <!-- Waiver form -->
               <form>
@@ -147,12 +147,11 @@
                   <label for="guardianAcknowledgement">Guardian Electronic Signature - Acknowledgement of Understanding:</label>
                   <input type="text" class="form-control" id="guardianAcknowledgement" placeholder="Guardian Electronic Signature">
                 </div>
+                <!-- Submit button -->
+                <div class="right-align">
+                  <button type="submit" class="btn btn-default submit-button" id="contactSubmit" data-toggle="modal" data-target="#myModal">Submit</button>
+                </div>
               </form>
-            </div>
-
-            <!-- Submit button -->
-            <div class="right-align">
-              <button type="submit" class="btn btn-default" id="contactSubmit" data-toggle="modal" data-target="#myModal">Submit</button>
             </div>
 
             <!-- Submit modal -->
