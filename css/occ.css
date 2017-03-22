@@ -475,6 +475,9 @@ a.rentals-link:hover {
 .navbar-default .navbar-form {
   border: 0px;
 }
+.navbar-fixed-top .navbar-collapse {
+  max-height: 400px;
+}
 /*.steps:nth-child(even) {
   background-color: #e4dfd5;
 } */
