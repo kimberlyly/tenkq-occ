@@ -1,10 +1,10 @@
 var walls = ["contour.png", "vertical.png", "cave.png", "arete.png", "overhang.png", "slab.png"];
 var wallnames = ["Contour", "Vertical", "Cave", "Arete", "Overhang", "Slab"]
-var resetdates = ["1/1/17", "2/2/17", "3/3/17", "4/4/17", "5/5/17", "6/6/17"]
+var resetdates = ["2/25/17", "3/11/17", "1/6/17", "4/4/17", "2/25/17", "1/28/17"]
 var settingwall = document.getElementById("setting-wall");
 
 for (var i = 0; i < walls.length; i++) {
-  settingwall.innerHTML = settingwall.innerHTML + '<div class="wall-image" data-toggle="tooltip" title="hello"><img src="assets/img/' + walls[i] + '"><br><div class="slide__caption"><strong>' + wallnames[i] + '</strong><br>' + resetdates[i] + '</div></div>';
+  settingwall.innerHTML = settingwall.innerHTML + '<div class="wall-image" data-toggle="tooltip" title="' + wallnames[i] + '"><img src="assets/img/' + walls[i] + '"><br><div class="slide__caption"><strong>' + wallnames[i] + '</strong><br>Reset: ' + resetdates[i] + '</div></div>';
 }
 
 $('#setting-wall').slick({

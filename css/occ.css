@@ -229,6 +229,14 @@ textarea {
   resize: none;
 }
 
+.assumption-risk {
+  width: 100%;
+  height: 200px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  padding: 15px;
+}
+
 /* FAQ: question text */
 .accordion {
   font-family: 'Fjalla One', sans-serif;
@@ -285,8 +293,27 @@ textarea {
   background-color: #486c45;
   background-image: none;
   border: 0px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
+  border-radius: 0px;
+  font-weight: lighter;
 }
+.submit-button:hover {
+  color: #fff;
+  background-color: #486c45;
+}
+.submit-button:active {
+  color: #fff;
+  background-color: #486c45;
+}
+.submit-button:visited {
+  color: #fff;
+  background-color: #486c45;
+}
+.submit-button:focus {
+  color: #fff;
+  background-color: #486c45;
+}
+
 /* WAIVER: form container */
 #waiverForm {
   background-color: #ffffff;
@@ -514,6 +541,9 @@ section:last-of-type {
   font-style: italic;
 }
 
+.signature {
+  background-color: #e2e3e2;
+}
 @media (min-width: 320px) {
   .section-hero-text {
     position: absolute;
